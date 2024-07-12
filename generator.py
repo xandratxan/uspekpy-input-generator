@@ -80,4 +80,4 @@ def generate_input_file(cases, iterations, air_gap, anode_angle, mu_tr_rho_file_
     df = df.T
     df.columns = input_headers
     print(df.to_string())
-    df.to_csv(output_path)
+    df.to_csv(output_path, index=False)
